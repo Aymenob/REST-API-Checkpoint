@@ -3,16 +3,16 @@ var router=express.Router()
 router.use(express.json())
 var {ManyUsers,OneUser,ListOfUsers,UpdateUser,DeleteUser,DeleteAllUsers}=require("../Controllers/Controller")
 
+//Find List Of Users
+
+router.get("/",ListOfUsers)
+
 //Posting Many Users
 
 router.post("/Users",ManyUsers)  
 //Posting One User
 
 router.post("/User",OneUser)
-
-//Find List Of Users
-
-router.get("/",ListOfUsers)
 
 // Updating a User with id
 

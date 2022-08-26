@@ -10,7 +10,7 @@ function ManyUsers(req, res) {
 
 }
 
-//Posting One User
+//Posting One User .
 
 function OneUser(req, res) {
     let user = new User(req.body)
